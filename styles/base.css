@@ -1,0 +1,110 @@
+:root {
+    --background-color: #e9edc9;
+    --primary-color: #457b9d;
+    --secondary-color: #a8dadc;
+    --text-color_first: #0d1b2a;
+    --text-color_second: #1b263b;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+
+.header {
+    background-color: #718355;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    height: 100px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.menu li {
+    margin: 0 10px;
+    font-family: 'karla', sans-serif;
+}
+
+section {
+    flex-wrap: wrap;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.7rem;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #a3b18a;
+    box-shadow:7px 7px 3px rgba(0, 0, 0, 0.3); 
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    font-family: 'karla', sans-serif;
+}
+
+.me, .rem, .mine {
+    display: flex;
+    justify-content: center;
+    font-family: 'karla', sans-serif;
+    color: var(--text-color_first);
+    margin-bottom: 10px; 
+}
+
+.about_me, .country {
+    font-family: 'Varela Round', sans-serif;
+    text-align: justify;
+    color: var(--text-color_second);
+    margin: 10px 15px; 
+    padding: 10px; 
+}
+
+.sp {
+    border: 2px solid #0d1b2a;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    box-shadow:7px 7px 3px rgba(0, 0, 0, 0.3); 
+    margin-left: 155px;
+    margin-top: 15px;
+}
+
+.card, .card2 {
+    padding: 20px; 
+    max-width: 600px; 
+    border-radius: 8px; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); 
+    display: block; 
+    margin: 20px auto; 
+    margin-top: 60px;
+    background-color: #ccd5ae;
+}
+
+.gg, .gg a {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr; 
+    justify-content: center; 
+    text-align: center; 
+    padding: 10px;
+    font-family: 'karla', sans-serif;
+    font-size: 1.3rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-family: 'karla', sans-serif;
+    font-size: 1.3rem;
+}
+
