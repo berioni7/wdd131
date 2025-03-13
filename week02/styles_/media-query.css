@@ -1,0 +1,29 @@
+body {
+    font-family: 'Reboto', sans-serif;
+}
+
+h1, footer, h2 {
+  display: flex;
+  justify-content: center;
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #fefae0;
+    border: 2px solid #606c38;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: #a3b18a;
+    border: 1px solid black;
+}
