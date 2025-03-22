@@ -15,4 +15,4 @@ document.addEventListener("DOMContentLoaded", function() {
             hamburgerBtn.innerHTML = "&#9776;"; 
         }
     });
-});
+}); 
