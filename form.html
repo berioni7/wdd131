@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="author" content="Gabriel Berioni">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/scripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Aoboshi+One&family=Calistoga&family=Karla:ital,wght@0,200..800;1,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Aoboshi+One&family=Calistoga&family=Karla:ital,wght@0,200..800;1,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Aoboshi+One&family=Calistoga&family=Karla:ital,wght@0,200..800;1,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="a">Main Form</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <h2 class="b">Product review</h2>
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product</option>
+            </select>
+            <p>Overall Rating</p>
+            <label><input type="radio" name='rating' value="1" required> ☆</label>
+            <label><input type="radio" name='rating' value="2" required> ☆☆</label>
+            <label><input type="radio" name='rating' value="3" required> ☆☆☆</label>
+            <label><input type="radio" name='rating' value="4" required> ☆☆☆☆</label>
+            <label><input type="radio" name='rating' value="5" required> ☆☆☆☆☆</label>
+            <label for="install-date">Date of Installation</label>
+            <input type="date" id="install-date" name="install-date" required>
+            <p>Which features did you find useful in the product? (check all that apply):</p>
+            <label><input type="checkbox" id='feature1' name="features" value="easy-install"> Easy Installation</label>
+            <label><input type="checkbox" id="feature2" name="features" value="durable">Durable</label>
+            <label><input type="checkbox" id="feature3" name="features" value="energy-efficient">Energy Efficient</label>
+            <label for="review">Write a Review (Optional)</label>
+            <textarea id="review" name="review"></textarea>
+            <label for="username">Your Name (Optional)</label>
+            <input type="text" id="username" name="username">
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer class="footer">
+        <p class="k">&copy; 2025 | Gabriel Berioni | Brazil <span id="currentyear"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
