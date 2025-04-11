@@ -664,6 +664,11 @@ ul {
 
 @media screen and (max-width: 768px) {
 
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+     
     .first {
       flex-direction: column;
       padding: 20px;
@@ -708,6 +713,11 @@ ul {
     :root {
       --sidebar-width: 200px;
       --sidebar-collapsed: 90px;
+    }
+
+    .sidebar {
+        height: 100dvh; 
+        width: 100%;
     }
   
     .sidebar:hover {
@@ -776,4 +786,6 @@ ul {
     }
     
   }
+  
+
   
