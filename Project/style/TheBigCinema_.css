@@ -715,9 +715,7 @@ ul {
       --sidebar-collapsed: 90px;
     }
 
-    .sidebar {
-        height: 100dvh; 
-    }
+    
   
     .sidebar:hover {
       width: var(--sidebar-width);
