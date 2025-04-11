@@ -1,0 +1,53 @@
+.amn {
+    font-family: 'Ultra', sans-serif;
+    font-weight: 400;
+    color: #fca311;
+    font-size: 3.0em;
+    display: flex;
+    justify-content: center;
+    text-shadow: 10px 4px 1px rgba(0, 0, 0, 0.7);
+    margin-top: -70px;
+}
+
+.pm {
+    font-family: 'Ultra', sans-serif;
+    font-weight: 400;
+    color: #ffb703;
+    font-size: 2.0em;
+    display: flex;
+    justify-content: center;
+    text-shadow: 5px 4px 1px rgba(0, 0, 0, 0.3);
+}
+
+.night {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5em;
+    color: #fca311;
+    text-shadow:
+     0 0 4px rgba(0, 0, 0, 1),
+     2px 2px 6px rgba(0, 0, 0, 0.8),
+     3px 3px 10px rgba(0, 0, 0, 0.6);
+    max-width: 600px; 
+    margin: 0 auto;    
+    text-align: center; 
+}
+
+.day {
+    font-family: 'Ultra', sans-serif;
+    font-weight: 400;
+    color: #fca311;
+    font-size: 3.0em;
+    display: flex;
+    justify-content: center;
+    text-shadow: 10px 4px 1px rgba(0, 0, 0, 0.7);
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+.why {
+    width: 200px;
+  }
