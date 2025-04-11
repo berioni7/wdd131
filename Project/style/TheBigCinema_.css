@@ -714,8 +714,6 @@ ul {
       --sidebar-width: 200px;
       --sidebar-collapsed: 90px;
     }
-
-    
   
     .sidebar:hover {
       width: var(--sidebar-width);
@@ -750,6 +748,7 @@ ul {
 
     .card {
         width: 300px;
+        margin-left: -25px;
     }
 
     .card::after {
