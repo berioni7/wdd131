@@ -8,6 +8,11 @@
     --sidebar-collapsed: 75px;
 }
 
+.menu-toggle,
+.mobile-nav {
+  display: none;
+}
+
 body {
     margin: 0;
     background-color: var(--background-color);
@@ -689,18 +694,19 @@ ul {
     }
 
     .menu {
-      transform: translateX(0);
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      align-items: center;
-      padding: 10px;
-      margin-left: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;      
+        justify-content: center;                 
+        width: 50px;
+        height: 30px;
+        padding: 15px;
+        margin-left: -200px;
     }
 
     .bb {
         font-size: 2.0em;
-        margin-right: 130px;
+        margin-right: 192px;
     }
   
     .menu a {
@@ -709,19 +715,80 @@ ul {
       white-space: normal;
       text-align: center;
     }
-  
-    :root {
-      --sidebar-width: 200px;
-      --sidebar-collapsed: 90px;
-    }
-  
-    .sidebar:hover {
-      width: var(--sidebar-width);
-    }
-  
-    .sidebar ul li a .text {
-      font-size: 14px;
-    }
+
+    .menu-toggle {
+        display: block;
+        background-color: transparent;
+        color: var(--primary_text);
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 10px 20px;
+        position: fixed;
+        top: 0px;
+        left: 185px;
+        z-index: 1000;
+      }
+    
+      .mobile-nav {
+        display: none; 
+        position: fixed;
+        top: 60px; 
+        left: 0;
+        width: 100%;
+        background-color: var(--primary_color);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        z-index: 999;
+        padding: 20px 0;
+        animation: fadeIn 0.3s ease;
+      }
+    
+      .mobile-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 20px; 
+      }
+    
+      .mobile-nav li {
+        text-align: center;
+        margin: 15px 0;
+      }
+    
+      .mobile-nav a {
+        color: var(--primary_text);
+        text-decoration: none;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        transition: color 0.3s ease;
+        
+      }
+    
+      .mobile-nav a:hover {
+        color: var(--hover_color); 
+      }
+    
+      .mobile-nav .icon img {
+        width: 24px;
+        height: 24px;
+        filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.4));
+      }
+      
+       main {
+       margin-left: 0;
+      }
+      
+      .sidebar {
+       display: none; 
+      }
 
     .w3 {
         font-size: 2.5em
@@ -730,12 +797,12 @@ ul {
     header {
       flex-direction: column;
       height: auto;
-      padding: 5px;
+      padding: 10px;
     }
   
     .header-wrapper {
       flex-direction: column;
-      gap: 10px;
+      gap: 0px;
       align-items: center;
       justify-content: center;
     }
@@ -781,7 +848,8 @@ ul {
         margin-left: -40px;
     }
     
-  }
+    
+}  
   
 
   

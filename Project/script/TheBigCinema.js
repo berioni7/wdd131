@@ -51,3 +51,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 4000);
     });
 });
+
+function openNav() {
+    const menu = document.getElementById('mobileMenu');
+    if (menu.style.display === 'block') {
+      menu.style.display = 'none';
+    } else {
+      menu.style.display = 'block';
+    }
+  }
+
+  document.querySelectorAll('#mobileMenu a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('mobileMenu').style.display = 'none';
+    });
+  });
